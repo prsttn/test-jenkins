@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'curl -fsSL https://get.docker.com -o get-docker.sh'
                 sh 'go build main.go'
                 sh 'go run main'
             }
