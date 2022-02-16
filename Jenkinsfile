@@ -10,10 +10,9 @@ pipeline {
                 sh 'go run main'
             }
         }
-        stage('build') {
+        stage('test') {
             steps {
-                sh 'go build main.go'
-                sh 'go run main'
+                sh 'go test'
             }
         }
     }
