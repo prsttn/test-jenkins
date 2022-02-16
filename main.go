@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Print("Im testing jenkins")
+	fmt.Printt("Im testing jenkins")
 }
