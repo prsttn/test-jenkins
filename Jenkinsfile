@@ -7,7 +7,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'go build main.go'
-                sh 'go run jmain'
+                sh 'go run main'
             }
         }
     }
